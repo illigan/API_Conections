@@ -2,14 +2,13 @@ import time
 import os 
 import requests
 import json
+from dotenv import load_dotenv
+
 
 #from dotenv import load_dotenv
-#load_dotenv()  # Load environment variables from .env
-#API_KEY =os.getenv("API_KEY")
-#user_id = os.getenv("user_id")
-
-API_KEY = 'MTQ2YWFhOTYtNzU5Yi00ZjgxLTg0ZmYtMjg0YzQzNzM3YWQ2OjUyZTZjMGMxLTQ0OTItNDRiZC1iOTA3LTMxMTEyYTViMmM2Yw=='
-user_id = 'bca4b9cc-b7e2-4458-83bc-4855c147bd70'
+load_dotenv()  # Load environment variables from .env
+API_KEY =os.getenv("API_KEY")
+user_id = os.getenv("user_id")
 
 ## class to manage CORE API's.
 class Core:
